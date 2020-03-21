@@ -18,11 +18,11 @@ Page({
   onLoad: function () {
    
     if(wx.getStorageSync('userInfo')){
-     
-    this.setData({
-        userInfo: wx.getStorageSync('userInfo'),
-        hasUserInfo: true
-      })
+      this.login()
+    // this.setData({
+    //     userInfo: wx.getStorageSync('userInfo'),
+    //     hasUserInfo: true
+    //   })
     }
    
     // if (app.globalData.userInfo) {
