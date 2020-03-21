@@ -16,8 +16,13 @@ Page({
     })
   },
   onLoad: function () {
+   
     if(wx.getStorageSync('userInfo')){
-      this.login()
+     
+    this.setData({
+        userInfo: wx.getStorageSync('userInfo'),
+        hasUserInfo: true
+      })
     }
    
     // if (app.globalData.userInfo) {
@@ -83,7 +88,7 @@ Page({
             if(ress.data.status_code==200){
               that.setData({
                 userInfo: ginfo,
-                // hasUserInfo: true
+                hasUserInfo: true
               })
             }
          

@@ -9,6 +9,25 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#F8753E",
+    "backgroundColor": "#9FFFF7",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/cat/habit",
+        "text": "增加",
+        "iconPath": "img/qbank-sm.png",
+        "selectedIconPath": "img/cat.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "img/qbank-sm.png",
+        "selectedIconPath": "img/qbank.png"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json"
 }
