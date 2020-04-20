@@ -1,0 +1,7 @@
+<view>
+	<image class="container" mode="widthFix" src="../../img/shouquan_1.jpg"></image>
+	<view class='bt'>
+		<van-button open-type='getUserInfo' round size="large" bindgetuserinfo="getUserInfo" type="info">进入授权</van-button>
+	</view>
+
+</view>

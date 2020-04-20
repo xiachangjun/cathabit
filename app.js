@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    host:'https://www.xiachangjun.com/api/v1/',
+    cats:[]
   }
 })

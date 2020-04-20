@@ -1,0 +1,26 @@
+<van-cell-group title="基本信息">
+	<van-field value="{{ info.name }}" label="名字" placeholder="输入小猫咪的姓名" border="{{ false }}" bind:change="onChange" />
+	<van-field value="{{ info.age }}" label="年龄" placeholder="输入小猫咪的年龄" border="{{ false }}" bind:change="onChange" />
+	<!-- <van-field
+    value="{{ info.gender }}"
+     label="性别"
+    placeholder="男孩还是女孩啊"
+    border="{{ false }}"
+    bind:change="onChangeG"
+  /> -->
+<van-cell title="性别" bindtap="showPopup" value="{{ info.gender }}" is-link />
+<van-field value="{{ info.type }}" label="颜色or品种" border="{{ false }}" bind:change="onChange" />
+</van-cell-group>
+
+<view style="    padding: 15% 10%;">
+	<van-button color="#FEE632" size="large" round bindtap="createCat">增加小猫咪</van-button>
+</view>
+<van-popup
+  show="{{ show }}"
+  position="bottom"
+  overlay="true"
+  bind:close="onClose"
+  z-index="101"
+>
+<van-picker columns="{{ columns }}" bind:change="onChangeSe" bind:confirm="onConfirm" />
+</van-popup>

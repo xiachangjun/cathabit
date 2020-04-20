@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/cat/habit",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/my/cats/createCat"
   ],
   "window": {
     "backgroundTextStyle": "light",

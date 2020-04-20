@@ -1,2 +1,10 @@
-<!--pages/cat/habit.wxml-->
-<text>pages/cat/habit.wxml</text>
+<view>
+	<view class="icon_view" bindtap="createHabit">
+		<image class="img_icon" src="/img/add.png"></image>
+    <view><text>增加一条记录</text></view>
+	</view>
+	<view class="icon_view">
+		<image  class="img_icon" src="/img/list.png"></image>
+    <view><text>查看记录列表</text></view>
+	</view>
+</view>
